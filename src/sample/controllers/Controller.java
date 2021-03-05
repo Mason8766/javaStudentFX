@@ -27,6 +27,7 @@ public class Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Student student = new Student("Mason","Douglas",1135879);
+        /////dsadasd
 
         lblFirstName.setText(student.getFirstName());
         lblLastName.setText(student.getLastName());
