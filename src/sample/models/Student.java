@@ -21,7 +21,7 @@ public class Student {
 
     private void setImage()
     {
-        String filePath = String.format("images/%s.",studentNumber);
+        String filePath = String.format("sample/Images/%s.png",studentNumber);
         this.image = new Image(filePath);
     }
 

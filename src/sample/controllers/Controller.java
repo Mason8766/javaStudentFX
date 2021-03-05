@@ -22,7 +22,7 @@ public class Controller implements Initializable {
     private Label lblLastName;
 
     @FXML
-    private ImageView studentPic;
+    private ImageView imageView;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -31,7 +31,7 @@ public class Controller implements Initializable {
         lblFirstName.setText(student.getFirstName());
         lblLastName.setText(student.getLastName());
         lblStudentNum.setText(Integer.toString(student.getStudentNumber()));
-        studentPic.setImage(student.getImage());
+        imageView.setImage(student.getImage());
 
     }
 
