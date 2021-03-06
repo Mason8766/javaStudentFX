@@ -14,6 +14,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
+/***
+ * Initializes gui objects, and sets values
+ */
 public class Controller implements Initializable {
 
     @FXML
@@ -36,20 +39,23 @@ public class Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+        //list containing students hobbies
         List favAct = new ArrayList<String>();
         favAct.add("Warhammer");
         favAct.add("Video games");
         favAct.add("Coding");
-        Student student = new Student("mason","Douglas",1135879,favAct);
-        System.out.println(student.getInterest());
+
+
+        Student student = new Student("mason","Douglas",1135879,favAct); //students class
+       //updates labels & imageview to display student information
         lblFirstName.setText(student.getFirstName());
         lblLastName.setText(student.getLastName());
         lblStudentNum.setText(Integer.toString(student.getStudentNumber()));
         imageView.setImage(student.getImage());
+
+        //for each member of the array, insert it into the list view
         for(int i = 0; i < student.getInterest().size();i++){
             String item = (student.getInterest().get(i)).toString();
-            System.out.println(i);
-            System.out.println(item);
             lstIntrest.getItems().addAll(item);
         }
 
