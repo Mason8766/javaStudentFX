@@ -51,12 +51,12 @@ public class Student {
     }
 
     /***
-     * Sets the file path to the images folder, and the file name, which is equal to the studentNumber+png
+     * Sets the file path to the images folder, and the file name, which is equal to the studentNumber+jpg
      * returns image, useing the filepath
      */
     private void setImage()
     {
-        String filePath = String.format("sample/Images/%s.png",studentNumber); //file path based off student number, to locate image
+        String filePath = String.format("sample/Images/%s.jpg",studentNumber); //file path based off student number, to locate image
         this.image = new Image(filePath);
     }
 

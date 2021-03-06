@@ -17,7 +17,7 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <AnchorPane prefHeight="362.0" prefWidth="617.0">
+      <AnchorPane prefHeight="362.0" prefWidth="583.0">
          <children>
             <GridPane layoutX="336.0" layoutY="14.0" prefHeight="184.0" prefWidth="267.0">
               <columnConstraints>
@@ -56,8 +56,8 @@
                      </font></Label>
                </children>
             </GridPane>
-            <ImageView fx:id="imageView" fitHeight="269.0" fitWidth="234.0" layoutX="40.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
-            <ListView fx:id="lstIntrest" layoutX="336.0" layoutY="198.0" prefHeight="142.0" prefWidth="267.0" />
+            <ImageView fx:id="imageView" fitHeight="153.0" fitWidth="291.0" layoutX="2.0" layoutY="105.0" pickOnBounds="true" rotate="90.0" />
+            <ListView fx:id="lstIntrest" layoutX="309.0" layoutY="198.0" prefHeight="142.0" prefWidth="267.0" />
          </children>
       </AnchorPane>
    </children>
